@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, Mi Amor!</title>
+    
+    <!-- Google Fonts para la nueva tipografía "carta" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Enlace al nuevo archivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SVG para un clip-path de corazón más suave y curvado. No es visible. -->
+    <svg width="0" height="0" style="position:absolute;">
+      <defs>
+        <clipPath id="heart-clip" clipPathUnits="objectBoundingBox">
+          <path d="M0.5,1 C0.4,0.9,0,0.7,0,0.3 A0.25,0.25,0,0,1,0.5,0.3 A0.25,0.25,0,0,1,1,0.3 C1,0.7,0.6,0.9,0.5,1 Z" />
+        </clipPath>
+      </defs>
+    </svg>
+
+    <!-- El canvas ahora se llamará "hearts-canvas" para mayor claridad -->
+    <canvas id="hearts-canvas"></canvas>
+
+    <div class="container">
+        <h1>¡Feliz Cumpleaños, <span class="name">Mi Amor!</span></h1>
+        
+        <!-- Foto actualizada a lady.jpeg -->
+        <img src="lady.jpeg" alt="Un momento especial juntos">
+
+        <p class="message">
+            Para la dueña de mi corazón,
+            <br><br>
+            En tu día especial, quiero que sepas cuánto significas para mí. Cada momento a tu lado es un regalo. Eres la luz que ilumina mi vida y la melodía de mi corazón.
+            <br><br>
+            ¡Que tengas un cumpleaños tan maravilloso como tú! Te quiero más de lo que las palabras pueden expresar.
+        </p>
+
+        <button id="music-button">▶️ Poner Música</button>
+    </div>
+
+    <!-- Audio configurado para tu canción, con repetición e intento de autoplay -->
+    <audio id="birthday-music" loop src="teconoci.mp3"></audio>
+
+    <!-- Enlace al nuevo archivo de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
